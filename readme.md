@@ -40,7 +40,7 @@ The format is as follows, first string is the name of the node type (not the nam
 ### Here is an example:
 
 #### Before:
-
+```python
 nodedict = {
 "file":[["file"], "cache"],
 "filecache":[["file"], "cache"],
@@ -61,9 +61,9 @@ nodedict = {
 "redshift::TextureSampler":[["tex0"], "texture"],
 "Redshift_Proxy_Output":[["RS_archive_file"], "cache"]
 }
-
+```
 #### After:
-
+```python
 nodedict = {
 "file":[["file"], "cache"],
 "filecache":[["file"], "cache"],
@@ -85,4 +85,4 @@ nodedict = {
 "Redshift_Proxy_Output":[["RS_archive_file"], "cache"]__,
 "rop_alembic":[["filename"], "cache"]__
 }
-
+```
