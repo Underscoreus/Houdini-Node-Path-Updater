@@ -82,7 +82,7 @@ nodedict = {
 "Redshift_ROP":[["RS_outputFileNamePrefix"], "render"],
 "rslightdome::2.0":[["env_map"], "light"],
 "redshift::TextureSampler":[["tex0"], "texture"],
-"Redshift_Proxy_Output":[["RS_archive_file"], "cache"]__,
-"rop_alembic":[["filename"], "cache"]__
+"Redshift_Proxy_Output":[["RS_archive_file"], "cache"],
+"rop_alembic":[["filename"], "cache"]
 }
 ```
