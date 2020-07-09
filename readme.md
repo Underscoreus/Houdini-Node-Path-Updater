@@ -13,7 +13,9 @@ I've included two main ways of installing this utility, my .shelf file with the 
 After downloading, copy the .shelf file to this folder on your machine:
 
 Windows: C:\Program Files\Side Effects Software\Houdini xx.x.xxx\houdini\toolbar
+
 Mac: Libary/Frameworks/Houdini Framework/Versions/xx.x.xxx/Resources/hodini/toolbar (Note that I am unfamiliar with Mac and don't know if this path is correct)
+
 Linux: /opt/hfs xx.x.xxx/houdini/toolbar
 
 After restarting houdini the "MB_Shelf" should be avalible to add to your shelf tray by clicking the "+" button next to your shelves titles, hovering over the "Shelves" option and scrolling down to "MB_Shelf".
@@ -22,6 +24,8 @@ After restarting houdini the "MB_Shelf" should be avalible to add to your shelf 
 
 After downloading, open houdini, either create a new shelf and add a new tool to this shelf or create a new tool in an existing shelf.
 Right click the new tool and select "Edit Tool", click on the "Script" tab in the new window, then copy the contents of the "Path_Updater.py" file and paste it into the text field in the "Script" tab. Click "Apply" and "Accept" and the tool is ready too use!
+
+(Note that to use the "Print Node Name" tool mentioned in the usage section you will need to repeat this process for that tool as well)
 
 ## Usage:
 
