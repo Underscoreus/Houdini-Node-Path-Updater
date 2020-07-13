@@ -6,7 +6,7 @@ message = 'Define the base folder for the old and new folder structure. Like /LO
 
 cc = 1
 
-usrreturn = hou.ui.readMultiInput(message,categories, buttons=('OK', 'Cancel'), close_choice=cc)
+usrreturn = hou.ui.readMultiInput(message,categories, buttons=('Update All Nodes', 'Update Selected Nodes', 'Cancel'), close_choice=cc)
 
 paths = usrreturn[1]
 
@@ -45,8 +45,11 @@ nodedict = {
 }
 
 
+if clicked == 0:
+    allnodes = hou.node('/').allSubChildren()
+elif clicked == 1:
+    allnodes = hou.selectedNodes()
 
-allnodes = hou.node('/').allSubChildren()
 
 nodesaffected = 0
 
@@ -71,7 +74,7 @@ def updatePath(innode):
                 nodesaffected += 1
         
 
-if clicked == 0:
+if clicked != 2:
     for child in allnodes:
         try:
             updatePath(child)
