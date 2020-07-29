@@ -6,11 +6,7 @@ The tool simply gathers a list of all nodes in the scene, checks them agains a l
 
 ## Instalation:
 
-I've included two main ways of installing this utility, my .shelf file with the tool, name and icon in it aswell as the raw python code.
-
-### Method 1:
-
-After downloading, copy the .shelf file to this folder on your machine:
+After downloading, copy the .shelf files to this folder on your machine:
 
 Windows: C:\Program Files\Side Effects Software\Houdini xx.x.xxx\houdini\toolbar
 
@@ -20,12 +16,11 @@ Linux: /opt/hfs xx.x.xxx/houdini/toolbar
 
 After restarting houdini the "MB_Shelf" should be avalible to add to your shelf tray by clicking the "+" button next to your shelves titles, hovering over the "Shelves" option and scrolling down to "MB_Shelf".
 
-### Method 2:
+This is simply an empty shelf I have included where the tools can be placed. Feel free to make your own shelf or place my tools in one of the existing shelfs.
 
-After downloading, open houdini, either create a new shelf and add a new tool to this shelf or create a new tool in an existing shelf.
-Right click the new tool and select "Edit Tool", click on the "Script" tab in the new window, then copy the contents of the "Path_Updater.py" file and paste it into the text field in the "Script" tab. Click "Apply" and "Accept" and the tool is ready too use!
-
-(Note that to use the "Print Node Name" tool mentioned in the usage section you will need to repeat this process for that tool as well)
+After selecting a shelf to place the tools in, right click on the shelf tab or on an empty part of the shelf and select "Edit shelf tab".
+In the new window select the "Tools" tab and scroll down the list. All my tools are prefixed with "MB" so they should show up there.
+Simply select the tool you want in the shelf and click "Apply" and then "Accept" and the tool should be ready for use.
 
 ## Usage:
 
@@ -37,7 +32,7 @@ The nodes that are recognized by this tool can easily be edited/expanded by righ
 To add a new node simply copy the last line of the "nodedict" variable and paste it on a new line right below it inside the curly brackets {}, remember to add a comma "," after the last line, then filling in the details for the node you want.
 The format is as follows, first string is the name of the node type (not the name of the node it self but the type of node, this can be found by running the other tool included in the shelf called "Print Node Name" and looking in the terminal Window), the second string is the parameter name you want to affect inside the node, this can be found by hovering over the parameter name inside the node, the third string is the category this node falls into, this will control what text field will change the nodes path. The different categories are "cache", "render", "light", "texture".
 
-### Here is an example:
+### Here is an example (NOTE THE BOTTOM LINE!):
 
 #### Before:
 ```python

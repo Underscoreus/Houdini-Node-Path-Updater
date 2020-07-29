@@ -5,5 +5,8 @@
  Note, that two definitions of the same element are not allowed in
  a single file. -->
 
-  <toolshelf name="MB_Shelf" label="MB Shelf"/>
+  <tool name="MB_print_selected_node_name" label="MB Print Selected Node Name" icon="PLASMA_App">
+    <script scriptType="python"><![CDATA[for node in hou.selectedNodes():
+    print(node.type().name())]]></script>
+  </tool>
 </shelfDocument>
