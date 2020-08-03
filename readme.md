@@ -4,6 +4,8 @@ A quick tool I wrote at the beginning of lockdown that would easily allow me to 
 
 The tool simply gathers a list of all nodes in the scene, checks them agains a list of certain node types and if it finds a match, it will do a string replacement based on user input to update the paths.
 
+Usage video: https://vimeo.com/444124462
+
 ## Instalation:
 
 After downloading, copy the .shelf files to this folder on your machine:
